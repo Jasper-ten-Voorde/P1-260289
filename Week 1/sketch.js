@@ -31,9 +31,13 @@ function draw() {
   text('Jasper ten Voorde', 74, 40);
   text('1.', 30, 40);
   text('2.', 30, 320);
+  text('Vlag ', 74, 320);
   text('3.', 30, 480);
+  text('Schaakbord', 74, 480);
   text('4.', 340, 40);
-  text('5.', 340, 320);
+  text('Stoplicht', 384, 40);
+  text('5.', 340, 300);
+  text('TRANSparant Huis', 370, 300)
 
   //vlag woah :P (im very very gay)
   strokeWeight(0)
@@ -85,13 +89,21 @@ function draw() {
 
 
   //TRANS-parant huis
+  fill(91,207,251)
+  strokeWeight(0);
+  triangle(430, 310, 478, 355, 383, 355);
+  rect(380, 450, 101, 50)
+  fill(245, 171, 185);
+  quad(478, 355, 383, 355, 360, 380, 497, 380);
+  rect(380, 420, 101, 30);
+  fill(255);
+  rect(380, 380, 101, 40);
+  
   noFill();
   strokeWeight(4);
   triangle(360, 380, 500, 380, 430, 310);
   rect(380, 380, 100, 120);
 
-  fill(91,207,251)
-  strokeWeight(0);
-  triangle(430, 310, 480, 355, 375, 355)
+  
 }
 
