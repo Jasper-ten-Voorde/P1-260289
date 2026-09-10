@@ -97,6 +97,7 @@ function draw() {
 
 
   //TRANS-parant huis
+  //dit is het trans gedeelte
   fill(91,207,251)
   strokeWeight(0);
   triangle(430, 310, 478, 355, 383, 355);
@@ -106,7 +107,7 @@ function draw() {
   rect(380, 420, 101, 30);
   fill(255);
   rect(380, 380, 101, 40);
-  
+  //dit is hui huis gedeelte
   noFill();
   strokeWeight(4);
   triangle(360, 380, 500, 380, 430, 310);
@@ -131,6 +132,7 @@ function draw() {
   text('20', 639, 102);
 
   //mario
+  //rode pet en tshirt
   fill(255,0 ,0);
   strokeWeight(0);
   rect(640, 260, 60, 10);
@@ -144,13 +146,13 @@ function draw() {
   rect(690, 350, 40, 10);
   rect(630, 360, 10, 10);
   rect(700, 360, 10, 10);
-
+//ogen en snoor
   fill(0)
   rect(690, 280, 10, 20);
   rect(700, 300, 10, 10);
   rect(690, 310, 40, 10);
 
-
+//dit is het haar
   fill(123, 63, 0);
   rect(630, 280, 30, 10);
   rect(620, 290, 10, 30);
@@ -161,7 +163,7 @@ function draw() {
   rect(690, 410, 40, 10);
   rect(610, 410, 40, 10);
   rect(620, 400, 30, 10);
-
+//dit is de huid
   fill(241,194,125);
   rect(630, 290, 10, 20);
   rect(650, 290, 40, 10);
@@ -178,7 +180,7 @@ function draw() {
   rect(700, 370, 30, 10);
   rect(610, 380, 20, 10);
   rect(710, 380, 20, 10);
-  
+  //het blauwen overhaul.
   fill(0, 60, 255);
   rect(650, 330, 10, 30);
   rect(680, 340, 10, 20);
@@ -190,18 +192,18 @@ function draw() {
   rect(630, 380, 80, 10);
   rect(630, 390, 30, 10);
   rect(680, 390, 30, 10);
-
+//the yellow buttons
   fill(255, 255, 0)
   rect(650, 360, 10, 10)
   rect(680, 360, 10, 10);
 
   //kris deltarune >:P
-   
+   //rode sjaal
   fill(235,0,149)
   rect(815, 200, 45, 20);
   rect(805, 210, 40, 20);
   rect(800, 220, 30, 20);
-  
+  //de huid
   fill(17,251,237)
   rect(855, 140, 10, 55);
   rect(865, 165, 5, 30);
@@ -213,7 +215,7 @@ function draw() {
   rect(890, 225, 10, 10);
   rect(895, 230, 10, 10);
   
-  
+  //het hartje
   fill(255,0,0);
   rect(925, 170, 5, 15);
   rect(920, 165, 5, 15);
@@ -221,7 +223,7 @@ function draw() {
   rect(935, 165, 5, 10);
   rect(915, 165, 5, 10);
 
-  
+  //schaduw
   fill(106,123,196);
   rect(865, 155, 40, 10);
   rect(870, 165, 30, 5);
@@ -276,7 +278,7 @@ function draw() {
   rect(890, 340, 5, 5);
 
   
-
+//haar en  kleren
   fill(11,11,59);
   rect(830, 100, 40, 50);
   rect(835, 95, 5,5);
