@@ -1,15 +1,14 @@
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  
+  createCanvas(windowWidth, windowHeight);
+  myfont = loadFont('PixelOperator8Bold.ttf')
 }
 
 let translateX = -400;
 let translateY = -150;
-
-
 function draw() {
   
-  background(220);
+  background(199,227,242);
 // dit is het poppertje
   fill(255);
   strokeWeight(10);
@@ -27,6 +26,7 @@ function draw() {
   circle(520+translateX, 250+translateY, 10);
   circle(570+translateX, 250+translateY, 10);
   //dit is de text van mijn naam en van de nummers. :O
+  textFont('arial')
   textSize(20);
   text('Jasper ten Voorde', 74, 40);
   text('1.', 30, 40);
@@ -40,6 +40,12 @@ function draw() {
   text('TRANSparant Huis', 370, 300)
   text('6.', 540, 40);
   text('Dobbelsteen', 585, 40);
+  text('7.', 580, 250);
+  text('Mario', 645, 250);
+  text('8.', 760, 85);
+  text('Kris Dreemurr',800, 85);
+  text('9.', 750, 460);
+  text('Album', 780, 460)
 
   //vlag woah :P (im very very gay)
   strokeWeight(0)
@@ -190,6 +196,87 @@ function draw() {
   rect(680, 360, 10, 10);
 
   //kris deltarune >:P
+   
+  fill(235,0,149)
+  rect(815, 200, 45, 20);
+  rect(805, 210, 40, 20);
+  rect(800, 220, 30, 20);
+  
+  fill(17,251,237)
+  rect(855, 140, 10, 55);
+  rect(865, 165, 5, 30);
+  rect(870, 170, 15, 20);
+  rect(885, 175, 10, 10);
+  rect(810, 245, 10, 5);
+  rect(810, 250, 10, 15);
+  rect(805, 250, 5, 20);
+  rect(890, 225, 10, 10);
+  rect(895, 230, 10, 10);
+  
+  
+  fill(255,0,0);
+  rect(925, 170, 5, 15);
+  rect(920, 165, 5, 15);
+  rect(930, 165, 5, 15);
+  rect(935, 165, 5, 10);
+  rect(915, 165, 5, 10);
+
+  
+  fill(106,123,196);
+  rect(865, 155, 40, 10);
+  rect(870, 165, 30, 5);
+  rect(885, 170, 15, 5);
+  rect(800, 260, 5, 30);
+  rect(805, 270, 5, 10);
+  rect(805, 285, 5, 5);
+  rect(810, 280, 5, 5);
+  rect(830, 235, 5, 15);
+  rect(835, 250, 5, 5);
+  rect(840, 255, 15, 5);
+  rect(855, 250, 5, 5);
+  rect(860, 245, 5, 5);
+  rect(865, 235, 5, 10);
+  rect(870, 215, 5, 20);
+  rect(860, 195, 10, 15);
+  rect(820, 195, 40, 5);
+  rect(815, 200, 5, 5);
+  rect(810, 205, 5,5);
+  rect(805, 210, 5, 5);
+  rect(800, 220, 5, 5);
+  rect(800, 230, 5, 5);
+  rect(810, 235, 10, 5);
+  rect(820, 230, 10, 5);
+  rect(830, 225, 10, 5);
+  rect(840, 220, 10, 5);
+  rect(850, 215, 5, 5);
+  rect(855, 210, 5, 5);
+  rect(805, 225, 10, 5);
+  rect(815, 220, 5, 5);
+  rect(820, 215, 10, 5);
+  rect(830, 210, 10, 5);
+  rect(840, 205, 10, 5);
+  rect(850, 200, 5, 5);
+  rect(895, 220, 5, 5);
+  rect(900, 225, 5,5 );
+  rect(905, 230, 5,5 );
+  rect(905, 215, 5, 10);
+  rect(910, 205, 5, 25);
+  rect(915, 205, 10, 15);
+  rect(920, 200, 20, 10);
+  rect(815, 330, 5, 5);
+  rect(810, 340, 5, 20);
+  rect(810, 355, 30, 5);
+  rect(835, 330, 5, 25);
+  rect(870, 330, 10, 10);
+  rect(880, 330, 5,5);
+  rect(875, 340, 5, 20);
+  rect(875, 355, 40, 5);
+  rect(875, 350, 25, 5);
+  rect(885, 345,10,5);
+  rect(890, 340, 5, 5);
+
+  
+
   fill(11,11,59);
   rect(830, 100, 40, 50);
   rect(835, 95, 5,5);
@@ -260,6 +347,46 @@ function draw() {
   rect(895, 330, 5, 10);
   rect(890, 315, 5, 15);
   rect(885, 295, 5, 35);
+  rect(880, 280, 5, 50);
+  rect(875, 270, 5, 60);
+  rect(880, 205, 5, 40);
+  rect(875, 230, 5, 15);
+  rect(885, 210, 5, 25);
+  rect(890, 215, 15, 5);
+  rect(875, 200, 5, 60);
+  rect(870, 200, 5, 15);
+  rect(865, 195, 5, 10);
+  rect(895, 195, 10, 5);
+  rect(900, 200, 5,5);
+  rect(905, 205, 5, 10);
+  rect(890, 220, 5,5);
+  rect(890, 235, 5, 5);
+  rect(895, 240, 10, 5);
+  rect(905, 235, 5, 5);
+  rect(910, 230, 5, 5);
+  rect(915, 220, 5, 10);
+  rect(920, 215, 5, 5);
+  rect(925, 210, 10, 5);
+  rect(935, 205, 5, 5);
+  rect(940, 190, 5, 15);
+  rect(930, 190, 10, 5);
+  rect(920, 195, 10, 5);
+  rect(915, 190, 5, 5);
+  rect(910, 195, 5, 10);
+  rect(860, 210, 10 ,5);
+  rect(855, 215, 5, 5);
+  rect(850, 220, 5, 5);
+  rect(840, 225, 10, 5);
+  rect(830, 230, 10, 5);
 
-}
+  //album
 
+  fill(0);
+  rect(780, 470, 200, 200);
+  fill(255)
+  textFont(myfont);
+  textSize(17)
+  text('UNDERTALE',805, 550);
+  textSize(13)
+  text('Soundtrack', 816, 590);
+ }
