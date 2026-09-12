@@ -342,10 +342,10 @@ function draw() {
   rect(865, 245, 5, 95);
   rect(870, 235, 5, 95);
   rect(870, 340, 5, 20);
-<<<<<<< HEAD
+//HEAD
 
   
-=======
+
   rect(870, 360, 50, 5);
   rect(915, 350, 5, 10);
   rect(910, 345, 5, 5);
@@ -384,7 +384,7 @@ function draw() {
   rect(850, 220, 5, 5);
   rect(840, 225, 10, 5);
   rect(830, 230, 10, 5);
->>>>>>> 347cfda45f19786701854694d7b67fa568c4c486
+
 
   //album
 
@@ -396,4 +396,4 @@ function draw() {
   text('UNDERTALE',805, 550);
   textSize(13)
   text('Soundtrack', 816, 590);
- }
+}
