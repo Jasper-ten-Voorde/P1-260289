@@ -1,15 +1,14 @@
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  
+  createCanvas(windowWidth, windowHeight);
+  myfont = loadFont('PixelOperator8Bold.ttf')
 }
 
 let translateX = -400;
 let translateY = -150;
-
-
 function draw() {
   
-  background(220);
+  background(199,227,242);
 // dit is het poppertje
   fill(255);
   strokeWeight(10);
@@ -27,6 +26,7 @@ function draw() {
   circle(520+translateX, 250+translateY, 10);
   circle(570+translateX, 250+translateY, 10);
   //dit is de text van mijn naam en van de nummers. :O
+  textFont('arial')
   textSize(20);
   text('Jasper ten Voorde', 74, 40);
   text('1.', 30, 40);
@@ -40,6 +40,12 @@ function draw() {
   text('TRANSparant Huis', 370, 300)
   text('6.', 540, 40);
   text('Dobbelsteen', 585, 40);
+  text('7.', 580, 250);
+  text('Mario', 645, 250);
+  text('8.', 760, 85);
+  text('Kris Dreemurr',800, 85);
+  text('9.', 750, 460);
+  text('Album', 780, 460)
 
   //vlag woah :P (im very very gay)
   strokeWeight(0)
@@ -91,6 +97,7 @@ function draw() {
 
 
   //TRANS-parant huis
+  //dit is het trans gedeelte
   fill(91,207,251)
   strokeWeight(0);
   triangle(430, 310, 478, 355, 383, 355);
@@ -100,7 +107,7 @@ function draw() {
   rect(380, 420, 101, 30);
   fill(255);
   rect(380, 380, 101, 40);
-  
+  //dit is hui huis gedeelte
   noFill();
   strokeWeight(4);
   triangle(360, 380, 500, 380, 430, 310);
@@ -125,6 +132,7 @@ function draw() {
   text('20', 639, 102);
 
   //mario
+  //rode pet en tshirt
   fill(255,0 ,0);
   strokeWeight(0);
   rect(640, 260, 60, 10);
@@ -138,13 +146,13 @@ function draw() {
   rect(690, 350, 40, 10);
   rect(630, 360, 10, 10);
   rect(700, 360, 10, 10);
-
+//ogen en snoor
   fill(0)
   rect(690, 280, 10, 20);
   rect(700, 300, 10, 10);
   rect(690, 310, 40, 10);
 
-
+//dit is het haar
   fill(123, 63, 0);
   rect(630, 280, 30, 10);
   rect(620, 290, 10, 30);
@@ -155,7 +163,7 @@ function draw() {
   rect(690, 410, 40, 10);
   rect(610, 410, 40, 10);
   rect(620, 400, 30, 10);
-
+//dit is de huid
   fill(241,194,125);
   rect(630, 290, 10, 20);
   rect(650, 290, 40, 10);
@@ -172,7 +180,7 @@ function draw() {
   rect(700, 370, 30, 10);
   rect(610, 380, 20, 10);
   rect(710, 380, 20, 10);
-  
+  //het blauwen overhaul.
   fill(0, 60, 255);
   rect(650, 330, 10, 30);
   rect(680, 340, 10, 20);
@@ -184,12 +192,93 @@ function draw() {
   rect(630, 380, 80, 10);
   rect(630, 390, 30, 10);
   rect(680, 390, 30, 10);
-
+//the yellow buttons
   fill(255, 255, 0)
   rect(650, 360, 10, 10)
   rect(680, 360, 10, 10);
 
   //kris deltarune >:P
+   //rode sjaal
+  fill(235,0,149)
+  rect(815, 200, 45, 20);
+  rect(805, 210, 40, 20);
+  rect(800, 220, 30, 20);
+  //de huid
+  fill(17,251,237)
+  rect(855, 140, 10, 55);
+  rect(865, 165, 5, 30);
+  rect(870, 170, 15, 20);
+  rect(885, 175, 10, 10);
+  rect(810, 245, 10, 5);
+  rect(810, 250, 10, 15);
+  rect(805, 250, 5, 20);
+  rect(890, 225, 10, 10);
+  rect(895, 230, 10, 10);
+  
+  //het hartje
+  fill(255,0,0);
+  rect(925, 170, 5, 15);
+  rect(920, 165, 5, 15);
+  rect(930, 165, 5, 15);
+  rect(935, 165, 5, 10);
+  rect(915, 165, 5, 10);
+
+  //schaduw
+  fill(106,123,196);
+  rect(865, 155, 40, 10);
+  rect(870, 165, 30, 5);
+  rect(885, 170, 15, 5);
+  rect(800, 260, 5, 30);
+  rect(805, 270, 5, 10);
+  rect(805, 285, 5, 5);
+  rect(810, 280, 5, 5);
+  rect(830, 235, 5, 15);
+  rect(835, 250, 5, 5);
+  rect(840, 255, 15, 5);
+  rect(855, 250, 5, 5);
+  rect(860, 245, 5, 5);
+  rect(865, 235, 5, 10);
+  rect(870, 215, 5, 20);
+  rect(860, 195, 10, 15);
+  rect(820, 195, 40, 5);
+  rect(815, 200, 5, 5);
+  rect(810, 205, 5,5);
+  rect(805, 210, 5, 5);
+  rect(800, 220, 5, 5);
+  rect(800, 230, 5, 5);
+  rect(810, 235, 10, 5);
+  rect(820, 230, 10, 5);
+  rect(830, 225, 10, 5);
+  rect(840, 220, 10, 5);
+  rect(850, 215, 5, 5);
+  rect(855, 210, 5, 5);
+  rect(805, 225, 10, 5);
+  rect(815, 220, 5, 5);
+  rect(820, 215, 10, 5);
+  rect(830, 210, 10, 5);
+  rect(840, 205, 10, 5);
+  rect(850, 200, 5, 5);
+  rect(895, 220, 5, 5);
+  rect(900, 225, 5,5 );
+  rect(905, 230, 5,5 );
+  rect(905, 215, 5, 10);
+  rect(910, 205, 5, 25);
+  rect(915, 205, 10, 15);
+  rect(920, 200, 20, 10);
+  rect(815, 330, 5, 5);
+  rect(810, 340, 5, 20);
+  rect(810, 355, 30, 5);
+  rect(835, 330, 5, 25);
+  rect(870, 330, 10, 10);
+  rect(880, 330, 5,5);
+  rect(875, 340, 5, 20);
+  rect(875, 355, 40, 5);
+  rect(875, 350, 25, 5);
+  rect(885, 345,10,5);
+  rect(890, 340, 5, 5);
+
+  
+//haar en  kleren
   fill(11,11,59);
   rect(830, 100, 40, 50);
   rect(835, 95, 5,5);
@@ -243,8 +332,8 @@ function draw() {
   rect(820, 295, 5, 35);
   rect(815, 310, 5, 20)
   rect(810, 330, 5, 10);
-  rect(805, 340, 5, 25)
-  rect(805, 365, 40, 5);
+  rect(805, 340, 5, 20)
+  rect(805, 360, 40, 5);
   rect(840, 260, 5, 105);
   rect(845, 260, 5, 55);
   rect(850, 260, 5, 25);
@@ -253,8 +342,58 @@ function draw() {
   rect(865, 245, 5, 95);
   rect(870, 235, 5, 95);
   rect(870, 340, 5, 20);
+<<<<<<< HEAD
 
   
+=======
+  rect(870, 360, 50, 5);
+  rect(915, 350, 5, 10);
+  rect(910, 345, 5, 5);
+  rect(900, 340, 10, 5);
+  rect(895, 330, 5, 10);
+  rect(890, 315, 5, 15);
+  rect(885, 295, 5, 35);
+  rect(880, 280, 5, 50);
+  rect(875, 270, 5, 60);
+  rect(880, 205, 5, 40);
+  rect(875, 230, 5, 15);
+  rect(885, 210, 5, 25);
+  rect(890, 215, 15, 5);
+  rect(875, 200, 5, 60);
+  rect(870, 200, 5, 15);
+  rect(865, 195, 5, 10);
+  rect(895, 195, 10, 5);
+  rect(900, 200, 5,5);
+  rect(905, 205, 5, 10);
+  rect(890, 220, 5,5);
+  rect(890, 235, 5, 5);
+  rect(895, 240, 10, 5);
+  rect(905, 235, 5, 5);
+  rect(910, 230, 5, 5);
+  rect(915, 220, 5, 10);
+  rect(920, 215, 5, 5);
+  rect(925, 210, 10, 5);
+  rect(935, 205, 5, 5);
+  rect(940, 190, 5, 15);
+  rect(930, 190, 10, 5);
+  rect(920, 195, 10, 5);
+  rect(915, 190, 5, 5);
+  rect(910, 195, 5, 10);
+  rect(860, 210, 10 ,5);
+  rect(855, 215, 5, 5);
+  rect(850, 220, 5, 5);
+  rect(840, 225, 10, 5);
+  rect(830, 230, 10, 5);
+>>>>>>> 347cfda45f19786701854694d7b67fa568c4c486
 
-}
+  //album
 
+  fill(0);
+  rect(780, 470, 200, 200);
+  fill(255)
+  textFont(myfont);
+  textSize(17)
+  text('UNDERTALE',805, 550);
+  textSize(13)
+  text('Soundtrack', 816, 590);
+ }
