@@ -27,10 +27,10 @@ function draw() {
     Xposition2 += 3
     
    }
-   else if (Xposition2 >= Xposition1 - distance && Yposition2 == Yposition1) {
+   else if (Xposition2 >= Xposition1 - distance && Yposition2 <= Yposition1 + 30) {
 
-    Xposition2 += 1
-    Yposition2 += 30
+    Xposition2 += 0.5
+    Yposition2 += 2
    }
    else {
 
@@ -45,6 +45,10 @@ function draw() {
    }
    if (Xposition1 > 890) {
     Xposition1 = 0
+    if (Xposition2 = 830) {
+      Yposition2 = 830
+      
+    }
    }
 }
 
