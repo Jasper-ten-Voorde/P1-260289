@@ -7,9 +7,11 @@ let Xposition1 = 200
 let Xposition2 = 0
 let Yposition1 = 200
 let Yposition2 = 200
+let Yposition3 = 230
+let Xposition3 = 0
 
 let carsize = 20
-let distance = carsize + 5
+let distance = carsize + 10
 function draw() {
   background(220);
  let car1 = rect(0+Xposition1, 0+Yposition1, carsize, carsize);
@@ -20,14 +22,15 @@ function draw() {
   Xposition1 += 2
   
 
-   if (Xposition2 > Xposition1 && Yposition2 === Yposition1) {
+   if (Xposition2 > Xposition1) {
 
-    Xposition2 += 2
-    Yposition2 += 30
+    Xposition2 += 3
+    
    }
-   else if (Xposition2 >= Xposition1 - distance) {
+   else if (Xposition2 >= Xposition1 - distance && Yposition2 == Yposition1) {
 
     Xposition2 += 1
+    Yposition2 += 30
    }
    else {
 
@@ -38,6 +41,7 @@ function draw() {
    if(Xposition2 > 825){
 
      Xposition2 = 0
+     Yposition2 = 200
    }
    if (Xposition1 > 890) {
     Xposition1 = 0
