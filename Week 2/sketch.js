@@ -7,10 +7,10 @@ function draw() {
   fill(30);
   strokeWeight(0);
   rect(600, 100, 210, 360);
-  quad(570, 110, 600, 100, 600, 460, 570, 460);
+  quad(570, 140, 600, 100, 600, 460, 570, 460);
   fill(10)
   strokeWeight(2) 
-  line(600, 100, 600, 460);
+  line(600, 101, 600, 460);
   fill(20);
   strokeWeight(0)
   rect(0, 460, 800, 140);
