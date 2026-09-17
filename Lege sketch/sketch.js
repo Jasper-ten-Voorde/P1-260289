@@ -4,7 +4,7 @@ function setup() {
 
 function draw() {
   //dit zijn de lijnen van de mondriaan.
-  background(255);
+  background(330);
   strokeWeight(4);
   fill(0);
   line(1, 75, 450, 75);
@@ -29,7 +29,7 @@ function draw() {
   
   //dit zijn de rode rechthoeken. :3
   strokeWeight(0);
-  fill(255, 0, 0);
+  fill(330, 0, 0);
   rect(3, 3, 95, 70);
   rect(102, 127, 156, 121);
   rect(232, 352, 96, 45);
@@ -38,13 +38,13 @@ function draw() {
   
 
   //dit zijn de blauwen rechthoeken >w<
-  fill(0, 0, 255);
+  fill(0, 0, 330);
   rect(262, 127, 186, 121);
   rect(502, 127, 46, 121);
   rect(452, 292, 96, 56);
   rect(3, 252, 95, 96);
 
-  fill(255, 255, 0);
+  fill(330, 330, 0);
   rect(552, 3, 45, 120);
   rect(102, 3, 156, 70);
   rect(102, 277, 126, 71);
@@ -53,3 +53,5 @@ function draw() {
   rect(232, 250, 100, 100);
   rect(262, 77, 189, 50);
 }
+  
+   

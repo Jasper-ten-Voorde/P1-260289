@@ -50,11 +50,12 @@ function draw() {
  circle(120, 340, 30);
 
  wait += adding
- if (keyCode === 13 && wait >= 10) {
+ if (keyIsPressed === true && wait >= 10) { 
+ if (keyCode === ENTER) {
   keypress += 1
-  keyCode = 0
   wait = 0
  }
+}
  //prange
  if (keypress == 3){
   fill(100, 0, 0);
@@ -62,7 +63,7 @@ function draw() {
   fill(255, 100, 0);
   circle(120, 305, 30);
   
-  keyCode = 0
+  
   
  } 
  //groen
@@ -72,7 +73,7 @@ function draw() {
   fill(0, 255, 0);
   circle(120, 340, 30);
   
-  keyCode = 0
+  
  }
  //rood
  else if(keypress == 1)
@@ -81,7 +82,7 @@ function draw() {
   fill(0, 100, 0)
   circle(120, 340, 30);
   
-  keyCode = 0
+  
  
  }
  else if(keypress >= 4){
@@ -96,9 +97,24 @@ function draw() {
  fill(0)
  textSize(30)
  text('8',X2, Y2);
- if (keyIsDown == LEFT_ARROW) {
-   X1 -= 100
-   X2 -= 100
+ if (keyIsPressed === true) {
+ 
+  if (keyCode === 65) {
+    X1 -= 2
+    X2 -= 2
+  }
+  else if (keyCode === 68) {
+    X1 += 2
+    X2 += 2
+  }
+  else if (keyCode === 87) {
+    Y1 -= 2
+    Y2 -= 2
+  }
+  else if (keyCode === 83) {
+    Y1 += 2
+    Y2 += 2
+  }
  }
  
  
