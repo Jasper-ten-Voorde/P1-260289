@@ -27,9 +27,21 @@ function setup() {
 
 function draw() {
   background(220);
-  fill(100);
+  textSize(40)
+  
   strokeWeight(0);
   wait +=1
+  if (press === 1) {
+  background(100, 0, 0);
+  fill(200, 0, 200)
+  text('Player 1', 340, 50);
+ }
+ else if (press === 2) {
+  background(0, 0, 100);
+  fill(200, 0, 200)
+  text('Player 2', 340, 50);
+ }
+ fill(100);
   rect(x2, y1, 80, 80, 20);
   rect(x1, y1, 80, 80, 20);
   rect(x3, y1, 80, 80, 20);
@@ -197,7 +209,8 @@ function draw() {
     }
   }
 //--------------------------
- text(press, 20, 20);
+ 
+
  //---------------------
   if (vak1 === 1) {
     // press = 2
@@ -309,8 +322,18 @@ function draw() {
     // press = 1
     fill(0, 0, 255);
     rect(x3, y3, 80, 80, 20);
-    
+  
   }
+  if (vak1 === 1 && vak2 === 1 && vak3 === 1 || vak4 === 1 && vak5 === 1 && vak6 === 1 || vak7 ===1 && vak8 === 1  && vak9 === 1 || vak1 === 1 && vak4 === 1 && vak7 === 1|| vak2 === 1&& vak5 === 1 && vak8 === 1 || vak3 === 1 && vak6 === 1 && vak9 === 1 || vak1 === 1 && vak5 === 1 && vak9 === 1 || vak3 === 1 && vak5 === 1 && vak7 === 1) {
+    text('PLAYER 1 WINS', 100, 100);
+  }
+  else if (vak1 === 2 && vak2 === 2 && vak3 === 2 || vak4 === 2 && vak5 === 2 && vak6 === 2 || vak7 ===2 && vak8 === 2  && vak9 === 2 || vak1 === 2 && vak4 === 2 && vak7 === 2|| vak2 === 2&& vak5 === 2 && vak8 === 2 || vak3 === 2 && vak6 === 2 && vak9 === 2 || vak1 === 2 && vak5 === 2 && vak9 === 2 || vak3 === 2 && vak5 === 2 && vak7 === 2) {
+    text('PLAYER 2 WINS', 100, 100);
+  }
+  else if (vak1 != 0 && vak2 != 0 && vak3 != 0 && vak4 != 0 && vak5 != 0 && vak6 != 0 && vak7 != 0 && vak8 != 0 && vak9 != 0) {
+    text('DRAW', 100, 100);
+  }
+ 
 }
 //----------
  
