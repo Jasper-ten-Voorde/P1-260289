@@ -95,10 +95,10 @@ function draw() {
       vak1 = 1
       press = 2
       wait = 0
-      if (powerup < 30 && powerup >= 11  && player1 === 0) {
+      if (powerup < 50 && powerup >= 11  && player1 === 0) {
         player1 = 1
       }
-      else if (powerup <= 100 && player1 === 0) {
+      else if (powerup <= 10 && player1 === 0) {
         player1 = 2
       }
     }
@@ -106,10 +106,10 @@ function draw() {
       vak1 = 2
       press = 1
       wait = 0
-      if (powerup < 30 && powerup > 10 && player2 === 0) {
+      if (powerup < 50 && powerup > 10 && player2 === 0) {
         player2 = 1
       }
-      else if (powerup <= 100 && player2 === 0) {
+      else if (powerup <= 10 && player2 === 0) {
         player2 = 2
       }
     }
@@ -127,7 +127,7 @@ function draw() {
       vak2 = 1
       press = 2
       wait = 0
-       if (powerup < 30 && powerup > 10 && player1 === 0) {
+       if (powerup < 50 && powerup > 10 && player1 === 0) {
         player1 = 1
       }
       else if (powerup <= 10 && player1 === 0) {
@@ -138,7 +138,7 @@ function draw() {
       vak2 = 2
       press = 1
       wait = 0
-      if (powerup < 30 && powerup > 10 && player2 === 0) {
+      if (powerup < 50 && powerup > 10 && player2 === 0) {
         player2 = 1
       }
       else if (powerup <= 10 && player2 === 0) {
@@ -532,7 +532,70 @@ function draw() {
     fill(0, 0, 255);
     rect(x3, y1 - 90, 80, 80, 20);
   }
-
+  if (vak32 === 1) {
+    fill(255, 0, 0);
+    rect(x3 + 90, y1 - 90, 80, 80, 20);
+  }
+  else if (vak32 === 2) {
+    fill(0, 0, 255);
+    rect(x3 + 90, y1 - 90, 80, 80, 20);
+  }
+  if (vak33 === 1) {
+    fill(255, 0, 0);
+    rect(x3 + 90, y1, 80, 80, 20);
+  }
+  else if (vak33 === 2) {
+    fill(0, 0, 255);
+    rect(x3 + 90, y1, 80, 80, 20);
+  }
+  if (vak71 === 1) {
+    fill(255, 0, 0);
+    rect(x1 - 90, y3, 80, 80, 20);
+  }
+  else if (vak71 === 2) {
+    fill(0, 0, 255);
+    rect(x1 - 90, y3, 80, 80, 20);
+  }
+    if (vak72 === 1) {
+    fill(255, 0, 0);
+    rect(x1 - 90, y3 + 90, 80, 80, 20);
+  }
+  else if (vak72 === 2) {
+    fill(0, 0, 255);
+    rect(x1 - 90, y3 + 90, 80, 80, 20);
+  }
+     if (vak73 === 1) {
+    fill(255, 0, 0);
+    rect(x1 , y3 + 90, 80, 80, 20);
+  }
+  else if (vak73 === 2) {
+    fill(0, 0, 255);
+    rect(x1 , y3 + 90, 80, 80, 20);
+  }
+     if (vak91 === 1) {
+    fill(255, 0, 0);
+    rect(x3 + 90 , y3, 80, 80, 20);
+  }
+  else if (vak91 === 2) {
+    fill(0, 0, 255);
+    rect(x3 + 90 , y3, 80, 80, 20);
+  }
+     if (vak92 === 1) {
+    fill(255, 0, 0);
+    rect(x3 + 90 , y3 + 90, 80, 80, 20);
+  }
+  else if (vak92 === 2) {
+    fill(0, 0, 255);
+    rect(x3 + 90 , y3 + 90, 80, 80, 20);
+  }
+     if (vak93 === 1) {
+    fill(255, 0, 0);
+    rect(x3 , y3 + 90, 80, 80, 20);
+  }
+  else if (vak93 === 2) {
+    fill(0, 0, 255);
+    rect(x3 , y3 + 90, 80, 80, 20);
+  }
 
   //------------
   if (vak1 === 1 && vak2 === 1 && vak3 === 1 || vak4 === 1 && vak5 === 1 && vak6 === 1 || vak7 ===1 && vak8 === 1  && vak9 === 1 || vak1 === 1 && vak4 === 1 && vak7 === 1|| vak2 === 1&& vak5 === 1 && vak8 === 1 || vak3 === 1 && vak6 === 1 && vak9 === 1 || vak1 === 1 && vak5 === 1 && vak9 === 1 || vak3 === 1 && vak5 === 1 && vak7 === 1 || vak12 === 1 && vak1 === 1 && vak5 === 1 || vak11 === 1 && vak1 === 1 && vak4 === 1 || vak13 === 1 && vak1 === 1 && vak2 === 1 || vak31 === 1 && vak3 === 1 && vak6 === 1 
@@ -541,6 +604,8 @@ function draw() {
     text('PLAYER 1 WINS', 255, 100);
     press = 3
     win = 1
+    player1 = 0
+    player2 = 0
   } 
   else if (vak1 === 2 && vak2 === 2 && vak3 === 2 || vak4 === 2 && vak5 === 2 && vak6 === 2 || vak7 ===2 && vak8 === 2  && vak9 === 2 || vak1 === 2 && vak4 === 2 && vak7 === 2|| vak2 === 2&& vak5 === 2 && vak8 === 2 || vak3 === 2 && vak6 === 2 && vak9 === 2 || vak1 === 2 && vak5 === 2 && vak9 === 2 || vak3 === 2 && vak5 === 2 && vak7 === 2 || vak12 === 2 && vak1 === 2 && vak5 === 2 || vak11 === 2 && vak1 === 2 && vak4 === 2 || vak13 === 2 && vak1 === 2 && vak2 === 2 || vak31 === 2 && vak3 === 2 && vak6 === 2 
    || vak32 === 2 && vak3 === 2 && vak5 === 2 || vak33 === 2 && vak3 === 2 && vak2 === 2 || vak71 === 2 && vak7 === 2 && vak8 === 2 || vak72 === 2 && vak7 === 2 && vak5 === 2 || vak73 === 2 && vak7 === 2 && vak4 === 2 || vak91 === 2 && vak9 === 2 && vak8 === 2 || vak92 === 2 && vak9 === 2 && vak5 === 2 || vak93 === 2 && vak9 === 2 && vak6 === 2
@@ -548,19 +613,23 @@ function draw() {
     text('PLAYER 2 WINS', 255, 100);
     press = 3
     win = 2
+    player1 = 0
+    player2 = 0
   }
   else if (vak1 != 0 && vak2 != 0 && vak3 != 0 && vak4 != 0 && vak5 != 0 && vak6 != 0 && vak7 != 0 && vak8 != 0 && vak9 != 0) {
     text('DRAW', 340, 100);
     press = 3
     win = 3
+    player1 = 0
+    player2 = 0
   }
   if (press === 3) {
    
-    if (mouseX > 300 && mouseX < 500 && mouseY > 125 && mouseY < 225) {
+    if (mouseX > 300 && mouseX < 500 && mouseY > 500 && mouseY < 550) {
       fill(200);
-      rect(300, 125, 200, 100);
+      rect(300, 500, 200, 50);
       fill(100)
-      text('reset', 350, 185);
+      text('reset', 350, 535);
     
       if (mouseIsPressed && win === 1) {
          player1 = 0
@@ -577,6 +646,16 @@ function draw() {
         vak9 = 0
         vak11 = 0
         vak12 = 0
+        vak13 = 0
+        vak31 = 0
+        vak32 = 0
+        vak33 = 0
+        vak71 = 0
+        vak72 = 0
+        vak73 = 0
+        vak91 = 0
+        vak92 = 0
+        vak93 = 0
         x1 = 270;
     x2 = 360;
     x3 = 450;
@@ -596,6 +675,16 @@ function draw() {
         vak9 = 0
         vak11 = 0
         vak12 = 0
+        vak13 = 0
+        vak31 = 0
+        vak32 = 0
+        vak33 = 0
+        vak71 = 0
+        vak72 = 0
+        vak73 = 0
+        vak91 = 0
+        vak92 = 0
+        vak93 = 0
         x1 = 270;
     x2 = 360;
     x3 = 450;
@@ -619,6 +708,16 @@ function draw() {
        vak9 = 0
        vak11 = 0
        vak12 = 0
+       vak13 = 0
+        vak31 = 0
+        vak32 = 0
+        vak33 = 0
+        vak71 = 0
+        vak72 = 0
+        vak73 = 0
+        vak91 = 0
+        vak92 = 0
+        vak93 = 0
        player1 = 0
        player2 = 0
        x1 = 270;
@@ -628,20 +727,25 @@ function draw() {
     }
     else{
     fill(100)
-    rect(300, 125, 200, 100);
+    rect(300, 500, 200, 50);
     fill(0)
-    text('reset', 350, 185);
+    text('reset', 350, 535);
     }
   }
- 
+ fill(200);
+ rect(50, 300, 100, 50);
+ rect(650, 300, 100 , 50);
  if (player1 === 1) {
+  fill(0);
+  textSize(15)
+  text('Flashbang = 1', 55, 330);
   if (keyCode === 49) {
-
+   
    if (press === 2){
    fill(240); 
    rect(0,0, 800, 600);
    fill(0)
-   text(player1, 40, 40);
+
     if(powerup >= 51 && x3 <= 700 && x1 >= 50  ) {
     x1 += moveX
     x2 += moveX
@@ -666,17 +770,20 @@ function draw() {
   }
 }
  
- text(player1, 40, 40)
+
 }
 
  if (player2 === 1) {
+    fill(0);
+  textSize(15)
+  text('Flashbang = 0', 653, 330);
   if (keyCode === 48) {
 
   if (press === 1){
    fill(240); 
    rect(0,0, 800, 600);
    fill(0)
-   text(player2, 750, 40);  
+
     if(powerup >= 51 && x3 <= 700 && x1 >= 50  ) {
     x1 += moveX
     x2 += moveX
@@ -699,10 +806,13 @@ if (press === 2) {
     x3 = 450;
   }
  }
- text(player2, 750, 40)
+
  }
-text(player1, 40, 40)
+
  if (player1 === 2) {
+  fill(0);
+  textSize(15)
+  text('Cheater', 55, 330);
    if (mouseX > x1 && mouseX < x1 + 80 && mouseY > y1 - 90 && mouseY < y1 - 10 && vak11 === 0) {
     if (mouseIsPressed === true && press === 1 && wait >= 15) {
       vak11 = 1
@@ -756,9 +866,227 @@ text(player1, 40, 40)
     
     
     fill(150);
+    rect(x3 + 90 , y1 - 90, 80, 80, 20);
+   }
+   if (mouseX > x3 + 90 && mouseX < x3 + 170 && mouseY > y1 && mouseY < y1 + 80 && vak33 === 0) {
+     if (mouseIsPressed === true && press === 1 && wait >= 15) {
+      vak33 = 1
+      press = 2
+      wait = 0
+    }
+    
+    
+    fill(150);
+    rect(x3 + 90 , y1, 80, 80, 20);
+   }
+   if (mouseX > x1 - 90 && mouseX < x1 - 10 && mouseY > y3 && mouseY < y3 + 80 && vak71 === 0) {
+     if (mouseIsPressed === true && press === 1 && wait >= 15) {
+      vak71 = 1
+      press = 2
+      wait = 0
+    }
+    
+    
+    fill(150);
+    rect(x1 - 90 , y3, 80, 80, 20);
+   }
+   if (mouseX > x1 - 90 && mouseX < x1 - 10 && mouseY > y3 + 90 && mouseY < y3 + 170 && vak72 === 0) {
+     if (mouseIsPressed === true && press === 1 && wait >= 15) {
+      vak72 = 1
+      press = 2
+      wait = 0
+    }
+    
+    
+    fill(150);
+    rect(x1 - 90 , y3 + 90, 80, 80, 20);
+   }
+   if (mouseX > x1 && mouseX < x1 + 80 && mouseY > y3 + 90 && mouseY < y3 + 170 && vak73 === 0) {
+     if (mouseIsPressed === true && press === 1 && wait >= 15) {
+      vak73 = 1
+      press = 2
+      wait = 0
+    }
+    
+    
+    fill(150);
+    rect(x1 , y3 + 90, 80, 80, 20);
+   }
+   if (mouseX > x3 + 90 && mouseX < x3 + 170 && mouseY > y3 && mouseY < y3 + 80 && vak91 === 0) {
+     if (mouseIsPressed === true && press === 1 && wait >= 15) {
+      vak91 = 1
+      press = 2
+      wait = 0
+    }
+    
+    
+    fill(150);
+    rect(x3 + 90 , y3, 80, 80, 20);
+   }
+   if (mouseX > x3 + 90 && mouseX < x3 + 170 && mouseY > y3 + 90 && mouseY < y3 + 170 && vak92 === 0) {
+     if (mouseIsPressed === true && press === 1 && wait >= 15) {
+      vak92 = 1
+      press = 2
+      wait = 0
+    }
+    
+    
+    fill(150);
+    rect(x3 + 90 , y3 + 90, 80, 80, 20);
+   }
+   if (mouseX > x3 && mouseX < x3 + 80 && mouseY > y3 + 90 && mouseY < y3 + 170 && vak93 === 0) {
+     if (mouseIsPressed === true && press === 1 && wait >= 15) {
+      vak93 = 1
+      press = 2
+      wait = 0
+    }
+    
+    
+    fill(150);
+    rect(x3 , y3 + 90, 80, 80, 20);
+   }
+   
+ }
+ 
+   if (player2 === 2) {
+    fill(0);
+  textSize(15)
+  text('Cheater', 660, 330);
+   if (mouseX > x1 && mouseX < x1 + 80 && mouseY > y1 - 90 && mouseY < y1 - 10 && vak11 === 0) {
+    if (mouseIsPressed === true && press === 2 && wait >= 15) {
+      vak11 = 2
+      press = 1
+      wait = 0
+    }
+    
+    
+    fill(150);
+    rect(x1, y1 - 90, 80, 80, 20);
+   }
+     if (mouseX > x1 - 90 && mouseX < x1 - 10 && mouseY > y1 - 90 && mouseY < y1 - 10 && vak12 === 0) {
+    if (mouseIsPressed === true && press === 2 && wait >= 15) {
+      vak12 = 2
+      press = 1
+      wait = 0
+    }
+    
+    
+    fill(150);
+    rect(x1 - 90, y1 - 90, 80, 80, 20);
+   }
+   if (mouseX > x1 - 90 && mouseX < x1 - 10 && mouseY > y1 && mouseY < y1 + 80 && vak13 === 0) {
+    if (mouseIsPressed === true && press === 2 && wait >= 15) {
+      vak13 = 2
+      press = 1
+      wait = 0
+    }
+    
+    
+    fill(150);
+    rect(x1 - 90, y1, 80, 80, 20);
+   }
+   if (mouseX > x3 && mouseX < x3 +80  && mouseY > y1 - 90 && mouseY < y1 - 10 && vak31 === 0) {
+    if (mouseIsPressed === true && press === 2 && wait >= 15) {
+      vak31 = 2
+      press = 1
+      wait = 0
+    }
+    
+    
+    fill(150);
     rect(x3 , y1 - 90, 80, 80, 20);
    }
+   if (mouseX > x3 + 90 && mouseX < x3 + 170  && mouseY > y1 - 90 && mouseY < y1 - 10 && vak32 === 0) {
+    if (mouseIsPressed === true && press === 2 && wait >= 15) {
+      vak32 = 2
+      press = 1
+      wait = 0
+    }
+    
+    
+    fill(150);
+    rect(x3 + 90 , y1 - 90, 80, 80, 20);
+   }
+   if (mouseX > x3 + 90 && mouseX < x3 + 170 && mouseY > y1 && mouseY < y1 + 80 && vak33 === 0) {
+     if (mouseIsPressed === true && press === 2 && wait >= 15) {
+      vak33 = 2
+      press = 1
+      wait = 0
+    }
+    
+    
+    fill(150);
+    rect(x3 + 90 , y1, 80, 80, 20);
+   }
+   if (mouseX > x1 - 90 && mouseX < x1 - 10 && mouseY > y3 && mouseY < y3 + 80 && vak71 === 0) {
+     if (mouseIsPressed === true && press === 2 && wait >= 15) {
+      vak71 = 2
+      press = 1
+      wait = 0
+    }
+    
+    
+    fill(150);
+    rect(x1 - 90 , y3, 80, 80, 20);
+   }
+   if (mouseX > x1 - 90 && mouseX < x1 - 10 && mouseY > y3 + 90 && mouseY < y3 + 170 && vak72 === 0) {
+     if (mouseIsPressed === true && press === 2 && wait >= 15) {
+      vak72 = 2
+      press = 1
+      wait = 0
+    }
+    
+    
+    fill(150);
+    rect(x1 - 90 , y3 + 90, 80, 80, 20);
+   }
+   if (mouseX > x1 && mouseX < x1 + 80 && mouseY > y3 + 90 && mouseY < y3 + 170 && vak73 === 0) {
+     if (mouseIsPressed === true && press === 2 && wait >= 15) {
+      vak73 = 2
+      press = 1
+      wait = 0
+    }
+    
+    
+    fill(150);
+    rect(x1 , y3 + 90, 80, 80, 20);
+   }
+   if (mouseX > x3 + 90 && mouseX < x3 + 170 && mouseY > y3 && mouseY < y3 + 80 && vak91 === 0) {
+     if (mouseIsPressed === true && press === 2 && wait >= 15) {
+      vak91 = 2
+      press = 1
+      wait = 0
+    }
+    
+    
+    fill(150);
+    rect(x3 + 90 , y3, 80, 80, 20);
+   }
+   if (mouseX > x3 + 90 && mouseX < x3 + 170 && mouseY > y3 + 90 && mouseY < y3 + 170 && vak92 === 0) {
+     if (mouseIsPressed === true && press === 2 && wait >= 15) {
+      vak92 = 2
+      press = 1
+      wait = 0
+    }
+    
+    
+    fill(150);
+    rect(x3 + 90 , y3 + 90, 80, 80, 20);
+   }
+   if (mouseX > x3 && mouseX < x3 + 80 && mouseY > y3 + 90 && mouseY < y3 + 170 && vak93 === 0) {
+     if (mouseIsPressed === true && press === 2 && wait >= 15) {
+      vak93 = 2
+      press = 1
+      wait = 0
+    }
+    
+    
+    fill(150);
+    rect(x3 , y3 + 90, 80, 80, 20);
+   }
+   
  }
+ 
 
 
 }
