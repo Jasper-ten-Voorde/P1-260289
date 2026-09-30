@@ -17,7 +17,10 @@ function setup() {
   for(let i = 0; i < img.width; i++) {
     for(let j = 0; j <img.height; j++){
       let c = img.get(i, j)
-      fill(c);
+      fill(c)
+      // if(c < 50 ) {
+      //   rect(i,j, 10, 10);
+      // }
       rect(i,j, 10, 10);
     }
   }
@@ -27,6 +30,6 @@ function setup() {
 
 
 function draw() { 
-  // tint(255, 127)
-  //  image(img, 0, 0, img.width / 4.80, img.height / 4.80)
+  
+ 
 }
