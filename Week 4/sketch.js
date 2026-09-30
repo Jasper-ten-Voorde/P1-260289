@@ -1,14 +1,28 @@
 let img;
+function preload() {
+   img = loadImage("themoon.jpg")
+}
 
 
 function setup() {
  
  
-  createCanvas(800, 450);
-   background(20);
- noStroke();
- img = loadImage("themoon.jpg")
- img2 = loadImage("themoon2.jpg")
+  
+  img.resize(700, 500);
+  createCanvas(img.width, img.height);
+  image(img, 0 ,0);
+   
+  img.loadPixels();
+  noStroke();
+  for(let i = 0; i < img.width; i++) {
+    for(let j = 0; j <img.height; j++){
+      let c = img.get(i, j)
+      fill(c);
+      rect(i,j, 10, 10);
+    }
+  }
+
+ 
 }
 
 
