@@ -26,29 +26,6 @@ function setup() {
  background(255);
   
   img.resize(700, 500);
-  // pallete[0].resize(700, 500);
-  // pallete[1].resize(700, 500);
-  // pallete[2].resize(700, 500);
-  // pallete[3].resize(700, 500);
-  // pallete[4].resize(700, 500);
-  // pallete[5].resize(700, 500);
-  // pallete[0].loadPixels();
-  // pallete[0].resize(700, 500);
-  // img2.resize(700, 500);
-  // img3.resize(700, 500);
-  // img4.resize(700, 500);
-  // img5.resize(700, 500);
-  // img6.resize(700, 500);
-  // img7.resize(700, 500);
-  // img2.loadPixels();
-  // img3.loadPixels();
-  // img4.loadPixels();
-  // img5.loadPixels();
-  // img6.loadPixels();
-  // img7.loadPixels();
-
-  
-
 }
 //loopen
 function draw() {
@@ -76,37 +53,7 @@ let  value = brightness(pix);
  let i = round( map ( value, 0, 255, 0, (700*500)- 1));
  let arrayPos = i * 4;
  //----
-//  let r = pallete[0].pixels[arrayPos]; 
-//  let g = pallete[0].pixels[arrayPos + 1]; 
-//  let b = pallete[0].pixels[arrayPos + 2];
-//  //------ 
-//  let r3 = pallete[1].pixels[arrayPos]; 
-//  let g3 = pallete[1].pixels[arrayPos + 1]; 
-//  let b3 = pallete[1].pixels[arrayPos + 2]; 
-//  //----
-//  let r4 = pallete[2].pixels[arrayPos]; 
-//  let g4 = pallete[2].pixels[arrayPos + 1]; 
-//  let b4 = pallete[2].pixels[arrayPos + 2]; 
-//  //-----
-//  let r5 = pallete[3].pixels[arrayPos]; 
-//  let g5 = pallete[3].pixels[arrayPos + 1]; 
-//  let b5 = pallete[3].pixels[arrayPos + 2];
-//  //----- 
-//  let r6 = pallete[4].pixels[arrayPos]; 
-//  let g6 = pallete[4].pixels[arrayPos + 1]; 
-//  let b6 = pallete[4].pixels[arrayPos + 2];
-//  //-----
-//  let r7 = pallete[5].pixels[arrayPos]; 
-//  let g7 = pallete[5].pixels[arrayPos + 1]; 
-//  let b7 = pallete[5].pixels[arrayPos + 2];
- //-----
 
-//  let c7 = color(r7, g7, b7);
-//  let c6 = color(r6, g6, b6);
-//  let c5 = color(r5, g5, b5);
-//  let c4 = color(r4, g4, b4);
-//  let c3 = color(r3, g3, b3);
-//  let c2 = color(r, g, b);
 
   //als je spatie clickt neemt een andere kleur over
  strokeWeight(0);
@@ -126,6 +73,7 @@ let  value = brightness(pix);
 
     }
   }
+  //links boven pallete verandert
   else if (mouseX > 0 && mouseX < 100 && mouseY > 0 && mouseY < 100) {
      k = 2
      let r4 = pallete[k].pixels[arrayPos];
@@ -137,6 +85,7 @@ let  value = brightness(pix);
       fill(c4, 128)
       text("FREEDOM", x, y);
   }  
+  //rechts boven pallete verandert
   else if (mouseX > 600 && mouseX < 700 && mouseY > 0 && mouseY < 100) {
      k = 3 
      let r5 = pallete[k].pixels[arrayPos];
@@ -148,6 +97,7 @@ let  value = brightness(pix);
       fill(c5, 128)
       text("FREEDOM", x, y);
   }  
+  //rechts onder pallete verandert
   else if (mouseX > 600 && mouseX < 700 && mouseY > 400 && mouseY < 500) {
      k = 4 
      let r6 = pallete[k].pixels[arrayPos];
@@ -159,6 +109,7 @@ let  value = brightness(pix);
       fill(c6, 128)
       text("FREEDOM", x, y);
   }  
+  //links onder pallete verandert
   else if (mouseX > 0 && mouseX < 100 && mouseY > 400 && mouseY < 500) {
      k = 5
      let r7 = pallete[k].pixels[arrayPos];
@@ -191,7 +142,7 @@ let  value = brightness(pix);
   textSize(20);
   text("save = S", 125, 45);
   text("load = L", 125, 90);
-  
+  // s = save
     if(keyIsPressed === true) {
       if(key === 's') {
          save1 = k;
@@ -201,6 +152,7 @@ let  value = brightness(pix);
          fill(100);
          text("save", 140, 45);
       }
+      //l = load
       if(key === 'l') {
         save = save1
         fill(200)
