@@ -6,10 +6,19 @@ let funcs = [setred, setgreen, setblue, setorange, setpurple, setyellow];
 let buttons = [];
 let afbeelding = [];
 function preload () {
-  loadImage("assets/elephant.pngs");
-
-
+  afbeelding.push(loadImage("assets/elephant.png"))
+  afbeelding.push(loadImage("assets/giraffe.png"))
+  afbeelding.push(loadImage("assets/hippo.png"))
+  afbeelding.push(loadImage("assets/monkey.png"))
+  afbeelding.push(loadImage("assets/panda.png"))
+  afbeelding.push(loadImage("assets/parrot.png"))
+  afbeelding.push(loadImage("assets/penguin.png"))
+  afbeelding.push(loadImage("assets/pig.png"))
+  afbeelding.push(loadImage("assets/rabbit.png"))
+  afbeelding.push(loadImage("assets/snake.png"))
 }
+
+
 function setup ()
 {
   let Xbutton = 10
@@ -22,7 +31,6 @@ function setup ()
 	button.mousePressed(funcs[i]);
   buttons.push(button);
   Xbutton += 100
- 
   }
   
 }
