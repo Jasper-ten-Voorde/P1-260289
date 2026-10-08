@@ -1,15 +1,16 @@
 let bakimg;
-let names = ["START", "A", "B", "C", "D"];
-let funcs = [start, Abutton, Bbutton, Cbutton, Dbutton]
+let names = ["START", "A", "B", "C", "D", "Next"];
+let funcs = [start, Abutton, Bbutton, Cbutton, Dbutton, next]
 let buttons = []
 let buttonstyles = {
-   posX: [300, 220, 480, 220, 480],
-   posY: [265, 230, 230, 335, 335],
-   breed: [200, 100, 100, 100, 100],
-   hoog: [70, 35, 35, 35, 35],
-   pixls: ['36px', '30px', '30px', '30px', '30px']
+   posX: [300, 220, 480, 220, 480, 520],
+   posY: [265, 350, 350, 455, 455, 315],
+   breed: [200, 100, 100, 100, 100, 60],
+   hoog: [70, 35, 35, 35, 35, 30],
+   pixls: ['36px', '30px', '30px', '30px', '30px', "10px"]
 
 }
+//dont join the verity roleplay extreme
 let currentBg = "black"
 let vraag = {
       vragen: [
@@ -25,7 +26,7 @@ let vraag = {
          "10",
               ],
       ant: [
-         "1.1", "1.2", "1.3", "1.4",
+         "Wit", "Zwart", "niemand", "allebei",
          "2.1", "2.2", "2.3", "2.4",
          "3.1", "3.2", "3.3", "3.4",
          "4.1", "4.2", "4.3", "4.4",
@@ -34,13 +35,17 @@ let vraag = {
          "7.1", "7.2", "7.3", "7.4",
          "8.1", "8.2", "8.3", "8.4",
          "9.1", "9.2", "9.3", "9.4",
-         "10.1", "10.2", "10.3", "10.4",
-      ],        
+         "10.1", "10.2", "10.3", "10.4"
+      ], 
+      aPosX: [250, 510, 250, 510],     
+      aPosY: [400, 400, 505, 505],  
       score: 0,
-      lvl: -1
+      lvl: -1,
+      afbeeld: []
     }
 function preload() {
  bakimg = loadImage("background.png")
+ img = [loadImage("shaaknorm.png")]
  
 }
 
@@ -61,6 +66,7 @@ function setup() {
     if(i >= 1) {
       button.hide();
     }
+    
    }
 }
 
@@ -71,36 +77,68 @@ function start() {
  buttons[3].show();
  buttons[4].show();
  vraag.lvl += 1
+
 }
 function Abutton() {
    
 if(vraag.lvl === 0) {
    currentBg = "green"
    vraag.score += 1
+   buttons[5].show();
+   vraag.lvl +=1
  }
- vraag.lvl +=1
+else if(vraag.lvl === 2) {
+   currentBg = "red"
+   buttons[5].show();
+   vraag.lvl +=1
+ }
+ 
 }
 function Bbutton() {
  if(vraag.lvl === 0) {
    currentBg = "red"
+   buttons[5].show();
  }
- vraag.lvl +=1
+ else if(vraag.lvl === 2) {
+   currentBg = "red"
+   buttons[5].show();
+   vraag.lvl +=1
+ }
+ 
 }
 function Cbutton() {
 if(vraag.lvl === 0) {
    currentBg = "red"
+   buttons[5].show();
+   vraag.lvl +=1
  }
- else if(vraag.lvl === 1) {
+ else if(vraag.lvl === 2) {
    currentBg = "green"
+   buttons[5].show();
+   vraag.score += 1
+   vraag.lvl +=1
  }
- vraag.lvl +=1
+
 }
 
 function Dbutton() {
  if(vraag.lvl === 0) {
    currentBg = "red"
+   buttons[5].show();
+   vraag.lvl +=1
  }
- vraag.lvl +=1
+ else if(vraag.lvl === 2) {
+   currentBg = "red"
+   buttons[5].show();
+   vraag.lvl +=1
+ }
+ 
+}
+
+function next() {
+  vraag.lvl += 1
+  currentBg = "black"
+  buttons[5].hide()
 }
 
 function draw() {
@@ -111,9 +149,18 @@ function draw() {
    text(vraag.score, 200, 100);
    if(vraag.lvl === 0) {
       textSize(30);
-      text(vraag.vragen[0], 200, 100)
+      fill("grey")
+      rect(220, 70, 340, 50);
+      fill(0)
+      text(vraag.vragen[0], 230, 100)
+      text(vraag.ant[0], 240, 400);
+      text(vraag.ant[1], 510, 400);
+      text(vraag.ant[2], 220, 505);
+      text(vraag.ant[3], 510, 505);
+      tint(255, 254)
+      image(img[0], 300, 130, 200, 200);
    }
-
+   
 }
 
 
