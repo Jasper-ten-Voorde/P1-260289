@@ -4,11 +4,11 @@ let playing = false;
 let hungry = 0.03;
 let energydrain = 0.01
 //appliance
-let appliimg = ["betterfridge.png"]
+let appliimg = ["assets/food/betterfridge.png"]
 let applifunc = [openfri]
 let fridgeopen = false
 //food
-let foodsimg = ['pizza.png', 'sushi.png', 'monster.png']
+let foodsimg = ['assets/food/pizza.png', 'assets/food/sushi.png', 'assets/food/monster.png']
 let foodsfunc = [givePiz, giveSuh, giveMon]
 let foodhov = [hovPiz, hovSuh, hovMon]
 let foodbutton = []
@@ -27,10 +27,10 @@ let pet = {
 }
 
 function preload() {
-loadImage('pizza.png');
-loadImage('sushi.png');
-loadImage('monster.png')
- imgguy = loadImage("guy1.png");
+loadImage('assets/food/pizza.png');
+loadImage('assets/food/sushi.png');
+loadImage('assets/food/monster.png')
+ imgguy = loadImage("assets/guy1.png");
 }
 
 function setup() {
