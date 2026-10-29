@@ -14,6 +14,7 @@ let foodhov = [hovPiz, hovSuh, hovMon]
 let foodbutton = []
 let food;
 let button;
+let monhov = false;
 
 let pet = {
   name: 'guy',
@@ -41,8 +42,10 @@ function setup() {
    food.style('width', '100px');
    food.style('height', '100px')
    food.mouseOver(foodhov[i]);
+   food.mouseOut(foodhov[i])
    food.hide();
    foodbutton.push(food);
+   
   }
 
   for (i = 0; i < appliimg.length; i++) {
@@ -69,7 +72,10 @@ function draw() {
   rect(150, 10, pet.mentalhealth, 20);
   fill(255, 0, 0)
   rect(105, 35, 5, 30);
+  if(monhov === true) {
+   text("monster", 400, 400)
 
+  }
   //health stays at 0
   if(pet.health <= 0) {
     pet.health = 0
@@ -195,7 +201,13 @@ else if (fridgeopen === true) {
    console.log("sushi")
   }
   function hovMon() {
-   text('Monster', 400, 400);
+   if(monhov === false) {
+    monhov = true
+   }
+   else if(monhov === true) {
+     monhov = false
+   }
+
   }
 // function mousePressed() {
 //   if (pet.health != 0) {
