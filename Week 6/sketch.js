@@ -116,6 +116,30 @@ for (let i = 0; i < arrowimg.length; i++) {
 
 
   }
+
+//     if (getItem("pet") == null) {
+//     pet.hunger = 100;
+//     pet.dirtiness = 100;
+//     pet.energy = 100;
+//     pet.mentalhealth = 100;
+//    } else {
+//     pet = getItem("pet");
+// }
+if (getItem("pet") == null) {
+    pet = {
+        name: 'guy',
+        hunger: 100,
+        energy: 100,
+        dirtiness: 100,
+        health: 100,
+        mentalhealth: 100
+    };
+
+    storeItem("pet", pet);
+} else {
+    pet = getItem("pet");
+}
+
 }
 
 function draw() {
@@ -297,7 +321,15 @@ else {
     arrowbut[0].hide();
     applibut[1].hide();
     applibut[2].show();
+ 
+ 
+ 
   }
+
+
+
+  //savingf
+   storeItem("pet",pet);
 }
 
 
